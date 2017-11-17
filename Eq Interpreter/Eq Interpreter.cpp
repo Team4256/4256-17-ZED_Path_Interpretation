@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "exprtk.hpp"
-#include "networktables/NetworkTable.h"
+//#include "networktables/NetworkTable.h"
 
 #include <iostream>
 #include <fstream>
@@ -16,7 +16,7 @@ typedef exprtk::parser<T> parserT;
 
 parserT parser;
 
-std::shared_ptr<NetworkTable> sender;
+//std::shared_ptr<NetworkTable> sender;
 
 std::ifstream inFile;
 string currText;
@@ -27,13 +27,12 @@ T difference = ((double)(current - start)) / ((double)CLOCKS_PER_SEC);
 
 int main() {
 
-	NetworkTable::SetServerMode();
-	sender = NetworkTable::GetTable("tesla");
-	sender->PutBoolean("working", true);
+	//NetworkTable::SetServerMode();
+	//sender = NetworkTable::GetTable("tesla");
+	//sender->PutBoolean("working", true);
 
 
-
-	inFile.open("C:\\Users\\h_shively\\0eveloper\\workspace\\{git} Eq Interpreter\\Left Gear.txt");
+	inFile.open("C:\\Users\\h_shively\\0eveloper\\workspace\\{git} shi.work.Equation Interpreter\\left gear.txt");
 	if (inFile.fail()) {
 		std::cerr << "An error occurred while opening the file." << std::endl;
 		system("pause");

@@ -3,4 +3,4 @@ x: = -t/2.5
 y: = 3*x
 Until: 5 seconds
 x: = 52
-y: = 2*x
+y: = 5*x
